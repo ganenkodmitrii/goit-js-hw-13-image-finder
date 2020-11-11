@@ -4,42 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
-    <!-- <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style> -->
+    <title>Image finder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
-
   <body>
-    <article class="intro">
-      <!-- <h1>Webpack starter kit</h1> -->
+   
+    <form class="search-form" id="search-form">
+      <input type="text" name="query" autocomplete="off" placeholder="Искать картинки..." />
+      <button type="submit" class="js-button">Искать</button>
+    </form>
 
-      <!-- HTML image reference example. -->
-      <!-- <img src="./images/intro.png" alt="" width="640" /> -->
-    </article>
+
+    <ul class="gallery-box gallery">
+    <!-- Список <li> с карточками изображений -->
+    </ul>
+    <button type="button" class="load-more-btn btn-primary button" data-action="load-more">
+      <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span>
+    
+      <span class="label">Показать ещё</span>
+    </button>
+
   </body>
 </html>
