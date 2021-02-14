@@ -16,6 +16,8 @@ body {
   /*
    * CSS image reference example.
    */
+  margin: 0;
+  padding: 0;
   background-image: url('./images/bg-pattern.png');
 }
 
@@ -28,14 +30,20 @@ img {
 .search-form {
   display: flex;
   justify-content: center;
-  padding: 8px;
+  padding: 10px 350px;
   margin-bottom: 24px;
+  background-color: #36454f;
+}
+
+.search-btn {
+  margin-left: 10px;
 }
 
 .button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 24px;
 }
 
 .button.is-hidden {
